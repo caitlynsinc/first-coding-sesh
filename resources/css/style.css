@@ -1,0 +1,131 @@
+/* GLOBAL DEFAULTS */
+
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+@import url("https://use.typekit.net/wki6mps.css");
+
+* {
+   box-sizing: border-box; 
+}
+
+body {
+    background-color: white;
+    font-family: halyard-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+a {
+    color: #f0c16b;
+}
+
+a:hover {
+    color: #0b4959;
+}
+
+img,
+iframe {
+    max-width: 60%;
+}
+
+
+/* HEADINGS & TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #0b4959;
+    font-family: halyard-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+/* LAYOUTS */
+
+.layout-wide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER, MAIN & FOOTER */
+
+header {
+    background-color: white;
+    color: #0b4959;
+    font-size: 30px;
+    padding: 5px;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: white;
+    color: #0b4959;
+    font-size: 18px;
+}
+
+
+/* NAVIGATION */
+
+
+/* MODULES */
+
+.news-component {
+    background-color: white;
+    padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .news-component {
+        background-color: white;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.photo-grid-child img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .photo-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+/* PHOTO GRID */
+/*
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+*/
