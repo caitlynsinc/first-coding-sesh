@@ -4,15 +4,9 @@
 
 @import url("https://use.typekit.net/wki6mps.css");
 
-* {
-   box-sizing: border-box; 
-}
-
 body {
     background-color: white;
     font-family: halyard-display, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     line-height: 1.8;
 }
 
@@ -24,25 +18,71 @@ a:hover {
     color: #0b4959;
 }
 
+mark {
+    background-color: #f1d2ba
+}
+
 img,
 iframe {
-    max-width: 60%;
+    max-width: 100%;
 }
+
 
 
 /* HEADINGS & TYPOGRAPHY */
 
 h1,
-h2,
+h2, 
 h3,
 h4,
 h5 {
-    color: #0b4959;
+    color: #c06f6e;
     font-family: halyard-display, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-    
+
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+p,
+ul,
+ol,
+li,
+dl,
+details {
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: #0b4959;
+}
+
+cite,
+img {
+    font-size: 14px;
+    font-style: italic;
+    color: #0b4959;
+}
+
 
 /* LAYOUTS */
 
@@ -50,15 +90,17 @@ h5 {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  
 }
+
+
 
 /* HEADER, MAIN & FOOTER */
 
 header {
     background-color: white;
-    color: #0b4959;
-    font-size: 30px;
-    padding: 5px;
+    padding: 50px;
+    margin-left: 30px;
 }
 
 main {
@@ -67,39 +109,61 @@ main {
 
 footer {
     background-color: white;
-    color: #0b4959;
-    font-size: 18px;
+    padding: 30px;
 }
+
+footer p {
+    font-size: 14px;
+    color: #0b4959;
+}
+
+
 
 
 /* NAVIGATION */
 
 
+
+
 /* MODULES */
 
-.news-component {
+
+/* banner */
+
+.banner {
     background-color: white;
     padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.banner p {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.2;
 }
 
 @media screen and (min-width: 800px) {
-    .news-component {
+    .banner {
         background-color: white;
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr;
     }
 }
 
+/* photo grid */
+
 .photo-grid-child img {
-    max-width: 100%;
+    display: grid;
+    grid: auto-flow dense / 40px 40px 1fr;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 600px) {
     .photo-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 10px;
     }
 }
 
@@ -108,24 +172,3 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
-
-
-/* PHOTO GRID */
-/*
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.column {
-    flex: 50%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-*/
