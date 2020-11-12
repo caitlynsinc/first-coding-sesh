@@ -19,6 +19,7 @@ a:hover {
 }
 
 mark {
+    color: #0b4959;
     background-color: #f1d2ba
 }
 
@@ -104,13 +105,21 @@ header .layout-wide {
 
 header {
     background-color: white;
-    padding: 50px;
-    margin-left: 30px;
 }
 
 .logo-wrapper img {
-    max-width: 200px;
+    max-width: 160px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 35px;
 }
+
+@media screen and (min-width: 600px) {
+    .logo-wrapper img {
+        max-width: 200px;
+    }
+}
+
 
 main {
     background-color: white;
@@ -147,31 +156,35 @@ footer p {
 }
 
 .banner p {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 200;
     text-align: center;
-    line-height: 1.2;
+    line-height: 2;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media screen and (min-width: 800px) {
-    .banner {
-        background-color: white;
+    .banner p {
+        font-size: 36px;
+        line-height: 1.8;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
 
+
 /* photo grid */
 
-.photo-grid-child img {
+.photo-grid {
     display: grid;
-    grid: auto-flow dense / 40px 40px 1fr;
-    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 @media screen and (min-width: 600px) {
     .photo-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
     }
 }
@@ -179,5 +192,6 @@ footer p {
 @media screen and (min-width: 800px) {
     .photo-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 }
