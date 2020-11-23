@@ -10,8 +10,7 @@ body {
     line-height: 1.8;
 }
 
-a,
-label {
+a {
     color: #f0c16b;
 }
 
@@ -135,7 +134,19 @@ footer p {
     color: #0b4959;
 }
 
+/*subscription*/
+.subscription-wrapper {
+    background-color: #e0b1b0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
 
+.subscription-wrapper label {
+    color: #0b4959;
+    display: block;
+    font-size: 26px;
+}
 
 
 /* NAVIGATION */
