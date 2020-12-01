@@ -31,17 +31,26 @@ iframe {
 
 /* GENERAL ELEMENTS */
 
+.tooltip-parent {
+    position: relative;
+}
+
 .tooltip {
     background-color: #ffffff;
     color: #0b4959;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
-    /* visibility: hidden; */
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+    visibility: hidden;
 }
 
 .tooltip-parent:hover .tooltip {
-    /* visibility: visible; */
+    visibility: visible;
 }
 
 
