@@ -195,14 +195,16 @@ figure {
     column-gap: 20px;
 }
 
-.locations-layout u {
-    stroke-width: 20px;
+
+.locations-layout strong {
+    border-bottom: 7px solid #f0c16b96;
+    display: inline-block;
+    line-height: 0.5;
 }
 
 .locations-layout iframe {
     margin-top: 40px;
 }
-
 
 
 /* HEADER, MAIN & FOOTER */
@@ -385,14 +387,25 @@ footer p {
 /* this is for mobile view */
 @media screen and (max-width: 800px) {
 
-    .nav-inner {
-        max-height: 0;
-        overflow: hidden;
-    }
- 
-    .nav-inner.open {
-        max-height: 100vh;
-    }
+#menu {
+    position: absolute;
+    width: 200px;
+    margin: -140px 0 0 -200px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    background: #f1d2ba;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+  
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+}
+
 }
 
 /* this is for large screen view */
