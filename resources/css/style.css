@@ -130,7 +130,7 @@ main .layout-wide {
     display: grid;
     grid-template-columns: 6fr 4fr;
     position: relative;
-}
+} 
 
 .column-copy {
     text-align: left;
@@ -177,6 +177,22 @@ figure {
 }
 
 
+.locations-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: 20px;
+}
+
+.locations-layout u {
+    stroke-width: 20px;
+}
+
+.locations-layout iframe {
+    margin-top: 40px;
+}
+
+
 
 /* HEADER, MAIN & FOOTER */
 
@@ -203,20 +219,22 @@ main {
 }
 
 footer {
-    background-color: white;
-    padding: 30px;
+    background-color: #C2776A;
+    margin-top: 30px;
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 16px;
     color: #0b4959;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 /*subscription*/
 .subscription-wrapper {
     background-color: #C2776A;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -224,6 +242,11 @@ footer p {
     color: #ffffff;
     display: block;
     font-size: 26px;
+}
+
+.subscription-wrapper input {
+    border-radius: 7px;
+    border-color: #0b4959;
 }
 
 
