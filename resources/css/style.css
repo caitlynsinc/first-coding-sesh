@@ -141,18 +141,26 @@ main .layout-wide {
     font-size: 22px;
 }
 
-.column-image {
-    position: relative;
+figure {
+    margin-top: 20px;
+    display: inline-block;
 }
 
-/*
-.column-image img {
-    border: 3px solid #f0c16b;
-    float: right;
-    margin-right: 100px;
-    z-index: 9999;
+.column-image {
+    position: relative; 
 }
-*/
+
+.column-image:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #f0c16b;
+    top: -20px;
+    right: -20px;
+    z-index: -5;
+  }
+
 
 .image-text {
     position: absolute;
